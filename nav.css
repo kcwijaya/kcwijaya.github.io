@@ -87,7 +87,7 @@ li {
 #close {
 	position: fixed;
 	top: 12%;
-	left: 50%;
+	left: 53%;
 	height: 4%;
 	width: 3.5%;
 	background: transparent;
@@ -219,6 +219,11 @@ img.instruct {
 }
 
 #acknowledge:hover {
+	background-image: url("images/acknowledge.jpg");
+	background-size: 100% 100%;
+}
+
+#acknowledge:focus {
 	background-image: url("images/acknowledge.jpg");
 	background-size: 100% 100%;
 }
