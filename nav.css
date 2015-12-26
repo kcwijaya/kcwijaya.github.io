@@ -188,6 +188,11 @@ img.instruct {
 	background-size: 100% 100%;
 }
 
+#resume:active {
+	background-image: url("images/lamp.jpg");
+	background-size: 100% 100%;
+}
+
 #contact:hover {
 	background-image: url("images/contactme.jpg");
 	background-size: 100% 100%;
