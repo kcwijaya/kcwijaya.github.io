@@ -223,6 +223,11 @@ img.instruct {
 	background-size: 100% 100%;
 }
 
+#acknowledge:focus {
+	background-image: url("images/acknowledge.jpg");
+	background-size: 100% 100%;
+}
+
 #copyright {
 	position: absolute;
 	top: 84.8%;
