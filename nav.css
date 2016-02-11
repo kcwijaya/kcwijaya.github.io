@@ -87,7 +87,7 @@ li {
 #close {
 	position: fixed;
 	top: 12%;
-	left: 53%;
+	left: 51%;
 	height: 4%;
 	width: 3.5%;
 	background: transparent;
@@ -129,7 +129,7 @@ li {
 
 #skills {
 	position: absolute;
-	top: 80%;
+	top: 80.75%;
 	left: 44.3%;
 	height: 20%;
 	width: 24%;
@@ -162,7 +162,7 @@ img.instruct {
 #education {
 	position: absolute;
 	top: 51%;
-	left: 10.5%;
+	left: 10.3%;
 	height: 30%;
 	width: 10%;
 }
@@ -184,6 +184,11 @@ img.instruct {
 }
 
 #resume:hover {
+	background-image: url("images/lamp.jpg");
+	background-size: 100% 100%;
+}
+
+#resume:active {
 	background-image: url("images/lamp.jpg");
 	background-size: 100% 100%;
 }
