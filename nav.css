@@ -201,7 +201,6 @@ img.instruct {
 #about:hover {
 	background-image: url("images/flower.jpg");
 	background-size: 100% 100%;
-	position: relative;
 }
 
 #project:hover {
