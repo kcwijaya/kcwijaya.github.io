@@ -1,628 +1,364 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="nav.css">
-<script type="text/javascript" src="jquery.imagemapster.js"> </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- 
+//////////////////////////////////////////////////////
 
-<!-- JQuery to allow for the various scenarios the user might use -->
-<script type="text/javascript">
-	jQuery(document).ready(function(){
+FREE HTML5 TEMPLATE 
+DESIGNED & DEVELOPED by FREEHTML5.CO
 
-		jQuery('.content').hide();
-		jQuery('#close').hide();
-		jQuery('img.photo').hide();
+//////////////////////////////////////////////////////
+ -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Hi, I'm Kim. </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Free HTML5 Template by FREEHTML5.co" />
+  	<meta name="keywords" content="freebie, template, bootstrap, html5, css3, mobile first, responsive" />
+  	<meta name="author" content="FREEHTML5.co" />
+
+  	<!-- Facebook & Twitter -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Webfont -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 		
-		jQuery('a.nav').on('click', function(e)
-		{
-			var link = jQuery(this).attr('href');
-			jQuery(link).show();
-			jQuery(link).siblings().hide();
+		<!-- Bootstrap & Style -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Iconfonts -->
+		<link rel="stylesheet" href="css/themify-icons.css">
+		
+		
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body id="outer-page">
+		<div id="top"></div>
+		<div id="fh5co-page">
 			
-			if (link == "#about-content")
-			{
-				jQuery("img.photo").show();
-			}
+			<nav role="navigation" id="fh5co-nav-slide">
+				<div class="container">
+					<div class="fh5co-nav-inner">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#about">About Me</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#skills">Skills</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		
+			<header id="fh5co-header" role="banner">
+				<div class="container">	
+					
+					<a href="index.html" id="fh5co-header-logo"></a>
+					<a href="#" class="fh5co-header-bars js-nav-toggle"><span>Menu</span> <i class="ti-menu"></i></a>					
+
+					<h1 class="fh5co-header-intro" style="text-align: left;">Hi <br> My name is Kimberly Wijaya. <br> I like to <b> build software</b>.<br> Let me tell you about it.</h1>
+				</div>
+			</header>	
+			<!-- /fh5co-header -->
 			
-			jQuery('.nav').hide();
-			jQuery(link).addClass('active');
-			jQuery(link).siblings().removeClass('active');
-			e.preventDefault();
-			jQuery('#copyright').show();
-			jQuery('#close').show();
-		});	
+			
 
-		jQuery('div.content #close').on('click', function(e)
-		{
-			jQuery('img.photo').hide();
-			jQuery('.content').hide();
-			jQuery('#close').hide();
-			jQuery('.nav').show();
-			jQuery('img.instruct').show();
-			jQuery('#copyright').show();
-		});
+			<main id="fh5co-main" role="main">
+				<div id="about" class="container pb-lg">
+					
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fh5co-heading text-center">
+									<h2 class="fh5co-heading-title">About me <span class="border"></span></h2>
+									<!-- <h3 class="fh5co-heading-intro">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings, business processes, circuit diagrams and sewing patterns.</h3> -->
+								</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fh5co-main-service">
+								<!-- 
+								“Block-level” links in HTML5
+								http://html5doctor.com/block-level-links-in-html-5/
+								 -->
+								<a class="fh5co-block-links text-center">
+									<div class="icon-circle">
+										<i class="ti-ruler-pencil"></i>
+									</div>
+									<h2>Education</h2>
+									<p>I am a senior pursuing a Bachelor of Science and a Master of Science in Computer Science at <span class="emphasize"> Stanford University </span>. During my undergraduate career, I focused on <span style="font-weight: 500"> Information Management and Analytics</span> and in my graduate career, I have a primary focus in <span style="font-weight: 500"> Mobile and Internet Computing</span> and a secondary depth in <span style="font-weight: 500"> Human-Computer Interaction </span>. </p>
+									<p class="p-link" onclick="window.open('KimberlyWijayaResume.pdf', '_blank')"><span class="learn-more">View Resume</span></p>
+								</a>
+							</div>		
+						</div>
+						<div class="col-md-4">
 
-	});
-	
-</script>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hi, I'm Kim.</title>
-<link rel="icon" 
-      type="image/ico" 
-      href="images/favicon.ico">
-</head>
-<body>
+							<div class="fh5co-main-service">
+								<a class="fh5co-block-links text-center">
+									<div class="icon-circle">
+										<i class="ti-briefcase"></i>
+									</div>
+									<h2>Work Experience</h2>
+									<p>I have worked as a <br> 
+										<span style="font-weight: 500"> Software Engineering Intern </span> at <span style="font-weight: 500">Microsoft </span>
+										 <br><span style="font-weight: 500"> Section Leader </span> for an introductory Computer Science class at<span style="font-weight: 500"> Stanford University</span> <br> 
+										 <span style="font-weight: 500"> Web Developer and Designer </span> for <span style="font-weight: 500">Pulse Magazine</span> <br>
+										 <span style="font-weight: 500"> Software Engineering Intern </span> for <span style="font-weight: 500"> Stanford University's School of Medicine</span> <br>
+										  and am an upcoming <span style="font-weight: 500"> Software Engineering Intern </span> at <span style="font-weight: 500"> Facebook </span></p> 
+									<p class="p-link" onclick="window.open('https://www.linkedin.com/in/kimberly-wijaya-0454a486/', '_blank')"><span class="learn-more">Check my LinkedIn</span></p>
+								</a>
+							</div>	
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+						</div>
+						<div class="col-md-4">
 
+							<div class="fh5co-main-service">
+								<a class="fh5co-block-links text-center">
+									<div class="icon-circle">
+										<i class="ti-heart"></i>
+									</div>
+									<h2>Interests and Goals</h2>
+									<p>I am particularly interested in <span style="font-weight: 500"> web development </span> and <span style="font-weight: 500"> full stack development </span>. I've focused a lot on <span style="font-weight: 500"> Natural Language Processing </span> and <span style="font-weight: 500"> Information Retrieval </span>, but am currently exploring <span style="font-weight: 500"> Artificial Intelligence</span>. I'm a perfectionist to my core and love spending time making sure that the projects I work on reflect the best of my abilities. This motivates me to work on every layer of a project: from the <span style="font-weight: 500"> database infrastructure </span> to the <span style="font-weight: 500"> UI/UX design </span>.</p>
+									<p class="p-link" onclick="window.open('https://www.github.com/kcwijaya', '_blank')"><span class="learn-more">Check my GitHub</span></p>
+								</a>
+							</div>		
 
-<img class="instruct" src="images/instructions.png">
-<div id="about-content" class="content">
-<h1>Hi, my name is Kimberly Wijaya.</h1>
-<p>There's a few things you should know about me. I'm twenty years
-old and have had the privilege of living all around the world. I've
-found my homebase in the lovely Bay Area, and it was here that I first
-fell in love with programming. I'm equal parts logic and creativity -
-and computer science was the perfect fit for me.</p>
+						</div>
 
-<p>I'm a perfectionist and highly motivated - and I've been
-channeling that determination into everything I do in hopes of coming
-out a better person and a better programmer. In my spare time, I write
-books and dabble in music.</p>
+					</div>
+					<!-- END .row -->
+				</div>
 
-<p>I'm still making my way through college, but have had my fair
-share of internships and experiences that have helped me hone in my
-abilities as a programmer. I hope to one day work full-time in industry,
-tackling problems and creating products for the world to enjoy.</p>
+				<div class="container" id="projects">
+					<div class="row">
+						<div class="col-md-12">
+							<div id="fh5co-projects">
+								<div class="fh5co-heading text-center">
+									<h2 class="fh5co-heading-title">My Projects <span class="border"></span></h2>
+									<!-- <h3 class="fh5co-heading-intro">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings, business processes, circuit diagrams and sewing patterns.</h3> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END .row -->
+				</div>
+				
+				<div id="projects" class="fh5co-projects-wrap">
+					<div class="effects">
+						<div class="owl-carousel">
 
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
-<img src="images/photo.png" class="photo">
+						<div class="item">
+								<div class="hover-img">
+									<figure>
+										<img src="images/flu.jpg" alt="Conquering the Cold">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">Conquering the Cold <span class="category">Python project that incorporates data from Google, Twitter, CDC, and NCDC into an ARIMAX Time Series to predict future flu outbreaks. Click for poster. </span></h3>
+										<div class="fh5co-projects-action from-bottom">
+											<br><br><br><br>
+											<a href="images/fluposter.jpg" class="goto-preview image-popup"><i class="ti-zoom-in"></i></a>
+										</div>
+									</div>
+								</div>
 
-<div id="skills-content" class="content">
-<h1>Skills</h1>
-<h4>Programming Languages</h4>
-<table>
-	<tr>
-		<td>Java:</td>
-		<td><img class="rating" src="images/5.png"></td>
-		<td>C++:</td>
-		<td><img class="rating" src="images/3.png"></td>
-	</tr>
-	<tr>
-		<td>C#:</td>
-		<td><img class="rating" src="images/4.png"></td>
-		<td>C:</td>
-		<td><img class="rating" src="images/3.png"></td>
-	</tr>
-	<tr>
-		<td>SQL:</td>
-		<td><img class="rating" src="images/4.png"></td>
-		<td>HTML:</td>
-		<td><img class="rating" src="images/3.png"></td>
-	</tr>
-	<tr>
-		<td>CSS:</td>
-		<td><img class="rating" src="images/3.png"></td>
-		<td>Python:</td>
-		<td><img class="rating" src="images/2.png"></td>
-	</tr>
-</table>
-<h4>Languages</h4>
-<table>
-	<tr>
-		<td>English:</td>
-		<td><img class="rating" src="images/5.png"></td>
-		<td>Bahasa Indonesian:</td>
-		<td><img class="rating" src="images/3.png"></td>
-	</tr>
-	<tr>
-		<td>French:</td>
-		<td><img class="rating" src="images/2.png"></td>
-	</tr>
-</table>
-<h4>Software</h4>
-<table>
-	<tr>
-		<td>Microsoft Office:</td>
-		<td><img class="rating" src="images/5.png"></td>
-		<td>Microsoft PowerPoint:</td>
-		<td><img class="rating" src="images/5.png"></td>
-	</tr>
-	<tr>
-		<td>Prezi:</td>
-		<td><img class="rating" src="images/5.png"></td>
-		<td>Visual Studio:</td>
-		<td><img class="rating" src="images/4.png"></td>
-	</tr>
-	<tr>
-		<td>Eclipse:</td>
-		<td><img class="rating" src="images/4.png"></td>
-		<td>vim:</td>
-		<td><img class="rating" src="images/4.png"></td>
-	</tr>
-	<tr>
-		<td>Adobe Photoshop:</td>
-		<td><img class="rating" src="images/4.png"></td>
-		<td>Github:</td>
-		<td><img class="rating" src="images/2.png"></td>
-	</tr>
-</table>
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
+								<div class="hover-img">
+									<figure>
+										<img src="images/msoft2.jpg" alt="Localization Portal">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">Localization Portal <span class="category">Node.js web application that serves as a centralized destination for translation memory management, software localization, and content localization. Incorporates a C# REST API cloud-based service to assist in database management and transactioning.  </span></h3>
 
-<div id="acknowledge-content" class="content">
-<h1>Acknowledgements</h1>
-<p>I have many people to thank for the creation of this website.</p>
-<ul>
-	<li><b> Samantha Wijaya</b> for being my sounding board for design
-	decisions.</li>
-	<li>Many images on this site were not taken by me, but were
-	released without copyright - I would like to acknowledge these
-	photographers, regardless. These images were taken from <b>pixabay.com</b>.</li>
-</ul>
-<p>Copyright &copy; 2015 Kimberly Wijaya</p>
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
+									</div>
+								</div>
+								
 
-<div id="experience-content" class="content">
-<h1>Experience</h1>
-<h4>Software Engineering Intern, Microsoft</h4>
-<hr>
-<p>I was a Software Engineering Intern at Microsoft in Redmond,
-Washington in the summer of 2015. I was in the Applications and Services
-division. In particular, I was in the Global Services and Experience
-(GSX) team. This team was in charge of creating the software to manage
-the localization of both the software (UI) and content (UA) aspects of
-Microsoft Office Suite products. This software included the interfaces
-to deal with handoff, localization, and preparation. My objective was to
-create a proof of concept towards a lightweight system that can
-integrate aspects of the two systems that handle UI and UA localization,
-respectively, to provide a simple, unified localization service. During
-my internship, I was able to attend a number of meetings; create a
-detailed analysis of the two systems which ended up being the only one
-of its kind and the document that members of both teams referred to;
-present three different presentations regarding my analysis, my
-developer document, and and final demo. I also began using version
-control to collaborate with others, as well as an extensive code review
-process.</p>
-<h4>Section Leader</h4>
-<hr>
-<p>I'm a section leader for the introductory computer science
-classes at Stanford University. I lead a section of twelve students who
-are just starting out in their CS careers. During section, I go through
-problems that are particularly relevant for them. The programming
-language I predominately teach in is Java. The problems we go over often
-have to deal with algorithms, data structures, common programming
-paradigms, and style. In addition to teaching sections, I also have to
-attend a number of meetings and workshops in order to be a better
-teacher. Much time is spent grading both assignments and exams, as well,
-which has given me a good grasp of style and decomposition.</p>
+							</div>
+							<div class="item">
 
-<h4>Industry Mentorship Program Coordinator</h4>
-<hr>
-<p>I am one of the core board members of the Women in Computer
-Science organization (<a href="http://web.stanford.edu/group/wics/">WiCS</a>)
-at Stanford University. In particular, I am the head coordinator of the
-Industry Mentorship Program. This program is geared towards matching a
-Stanford student with a member of the tech industry in Silicon Valley.
-This involves an intricate matching algorithm as well as the
-organization of a number of events to help facilitate these
-relationships. Being the head coordinator has allowed me to hone in on
-my abilities to delegate tasks, as well as my ability to communicate
-with members of industry. I am constantly in contact with various
-recruiters in the Bay Area in order to organize panels, workshops,
-scholarships, and sponsorships. As a member of the board of WiCS, I am
-also helping to increase diversity in the tech industry and CS
-community.</p>
+								<div class="hover-img">
+									<figure>
+										<img src="images/quiz.jpg" alt="Quiz Website">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">Quiz Website <span class="category">Java web application based by a MySQL database to create a website for users to create accounts, track progress, and take/create quizzes. </span></h3>
+										<div class="fh5co-projects-action from-bottom">
+											<a href="https://github.com/pballmer/QuizWebsite" target="_blank" class="goto-details"><i class="ti-share"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="hover-img">
+									<figure>
+										<img src="images/msoft1.jpg" alt="Unified UI-UA Localization Service">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">Unified UI-UA Localization Service <span class="category">Web Application with .NET infrastructure that merges two existing systems that manage software and content localization projects, respectively. Allows users to have a single, centralized portal to handle both projects. </span></h3>
+									</div>
+								</div>
 
-<h4>Campus Marketing Intern</h4>
-<hr>
-<p>During my sophomore year at Stanford, I worked closely with the
-CEO of Relish, Inc, a mobile application that focuses on using short
-videos to explore various attractions in a city. These attractions
-include restaurants, tourist spots, and cultural hubs. I participated in
-weekly meetings with the team to help make design decisions as well as
-marketing campaigns. Eventually, I also helped to curate and create
-videos for the application.</p>
+							</div>
+							<div class="item">
+								
+								<div class="hover-img">
+									<figure>
+										<img src="images/chatbot.jpg" alt="Movie Chatbot">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">Movie Chatbot <span class="category">Python chatbot that predicts movie preferences using NLP, Naive Bayes, sentiment analysis, and user-user collaborative filtering. </span></h3>
+										<div class="fh5co-projects-action from-bottom">
+											<a href="images/chatbot-sc.png" class="goto-preview image-popup"><i class="ti-zoom-in"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="hover-img">
+									<figure>
+										<img src="images/dive.jpg" alt="DiVE (Data in Virtual Environments)">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">DiVE (Data in Virtual Environments)<span class="category">Unreal Engine C++ project for the HTC Vive. Allows users to visualize and manipulate hyper dimensional data in virtual reality. Click for poster. <br><br><br></span></h3>
+										<div class="fh5co-projects-action from-bottom">
+											<a href="images/dive-p.jpg" class="goto-preview image-popup"><i class="ti-zoom-in"></i></a>
 
-<h4>Laboratory Intern</h4>
-<hr>
-<p>I was a laboratory intern at Sahabat Lingkungan Labs in Surabaya,
-Indonesia. Prior to discovering my love for computer science when I
-moved to Stanford, I was convinced I wanted to be a doctor. Though these
-aspirations have changed, this internship helped me achieve the work
-ethic that I have today. It made me adapt to a fast working environment
-where a mistake had to be rectified immediately. I was constantly
-shuttling between stations, each of which required very specific skills.
-Patience and meticulous attention to detail was key. During this
-internship, I helped to create medicine to repair cell damage due to
-myocardial ischemia and to suppress tumors. I also helped with quality
-control by ensuring the products were on par with international
-standards.</p>
+										</div>
+									</div>
+								</div>
 
-<h4>Coordinator of Season of Service</h4>
-<hr>
-<p>Season of Service was a community service project that I
-coordinated for two years. This project was geared towards helping
-children that were born with either a cleft lip or palate. Often
-ostracized from the community, many of the families with these children
-are unable to pay for their medical care and operations. Season of
-service involved a walkathon in which companies and individuals pledged
-a sum amount of money for each km that their participant completes.
-Organizing this event meant that I had to approach companies for
-sponsorships and lead a team to ensure everything went smoothly. The
-project raised over 180,000,000 IDR each year it was held.</p>
-<h4>Coordinator of World Vision</h4>
-<hr>
-<p>World Vision was a community service project that involved
-teaching a class of under priveleged young adults about technology. I
-was both the lead coordinator and the lead teacher. We taught students
-how to type, use the internet, and use common software - such as
-Microsoft Office. The second year I coordinated the program, we noticed
-that our students had a particular interest in graphic design and we
-focused the lessons on Adobe InDesign and Adobe Photoshop. In order to
-have this project be successful, extensive work had to be put in for
-schedules and curriculum work. In the end, each student was given a
-certificate of completion, which they have since presented to employers
-to get jobs that would not have been available to them otherwise.</p>
-<h4>Coordinator of Save a Child</h4>
-<hr>
-<p>This was an independent project I did on my own. In Indonesia,
-there is massive income inequality. Many children end up having to beg
-for money on the streets rather than go to school. As a result, I
-created a project geared towards fundraising money for the tuition for
-these children. I partnered with a company in Manila, Philippines to
-create themed snap bracelets to sell as incentives. I adopted a model
-where individuals could donate any amount of money and receive a snap
-bracelet in return. This project ended up raising enough money to pay
-for the tuitions of sixty children. I still receive their academic
-report cards today.</p>
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
+							</div>
+							<div class="item">
+								
+								
+								<div class="hover-img">
+									<figure>
+										<img src="images/redcap.jpg" alt="Project Title here">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">Childhood Anxiety Algorithms<span class="category">Worked with Stanford's School of Medicine's Psychiatry Division to migrate a flexible assessment battery of parent and child quesitonnaires to a web application, connecting REDCap to a PHP system to produce clinically relevant symptom scores in real time.  </span></h3>
+									</div>
+								</div>
 
-<div id="education-content" class="content">
-<h1>Education</h1>
-<p>I'm a junior at Stanford University in the sunny city of Palo
-Alto. I'm pursuing a <b> Bachelor of Science in Computer Science
-with a minor in Mathematics</b>, to be conferred in June 2017. My
-concentration is <b> information </b> because I believe the world starts
-and ends with data. Here's a few courses that I find particularly
-relevant:</p>
+								<div class="hover-img">
+									<figure>
+										<img src="images/haven.jpg" alt="Project Title here">
+									</figure>
+									<div class="fh5co-projects-overlay">
+										<h3 class="from-top">Haven<span class="category">A soon to be launched mobile application geared towards coordinating efforts to help communities recover after emergencies and natural disasters. </span></h3>
+										<div class="fh5co-projects-action from-bottom">
+											<a href="https://teamhaven.herokuapp.com" target="_blank" class="goto-details"><i class="ti-share"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
 
-<ul>
-	<li><a class="reg" href="http://stanford.io/1NGrbWR">Mathematical
-	Foundations of Computing</a></li>
-	<li><a class="reg" href="http://stanford.io/22jFH0v">
-	Introduction to Probability for Computer Scientists</a></li>
-	<li><a class="reg" href="http://stanford.io/1Oi19Pu"> Computer
-	Organization and Systems </a></li>
-	<li><a class="reg" href="http://stanford.io/1J1tOpy">Principles
-	of Computer Systems </a></li>
-	<li><a class="reg" href="http://stanford.io/1OFtVUg"> Design
-	and Analysis of Algorithms</a></li>
-	<li><a class="reg" href="http://stanford.io/1YqAQev">
-	Introduction to Databases</a></li>
-	<li><a class="reg" href="http://stanford.io/1Ij7Sq0">
-	Object-Oriented System Design</a></li>
-	<li><a class="reg" href="http://stanford.io/22jFWJ8"> Applied
-	Matrix Theory </a></li>
-</ul>
+						</div>
+					</div>
+				</div>
 
-<p>I am currently planning on pursuing a Master's Degree in Computer
-Science after I complete my undergraduate career at Stanford.</p>
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
+				<section class="fh5co-section" id="fh5co-workwithus">
+					<div class="container">
+						<div class="fh5co-workwithus-intro">
+							<h2>Do you want to learn more? Ask me!</h2>
+							<h3 class="has-btn-after"></h3>
+							<p><a href="mailto:kcwijaya@stanford.edu" class="btn btn-primary btn-lg btn-uppercase btn-effect">Get in touch <i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+				</section>
 
-<div id="contact-content" class="content">
-<h2>Let's be friends!</h2>
-<p>Please feel free to contact me in any of the following ways:</p>
-<ul>
-	<li><b>Email</b>: <a class="reg"
-		href="mailto:kcwijaya@stanford.edu"> kcwijaya@stanford.edu </a></li>
-	<li><b>Mail</b>: 531 Lasuen Mall #11162 Stanford, CA 94309</li>
-	<li><b>Phone</b>: (650) 490-0437</li>
-	<li><b> Social Media: </b></li>
-</ul>
-<ul>
-	<li style="list-style-type: none;"><a
-		href="https://www.linkedin.com/in/kimberly-wijaya-0454a486"
-		class="linkedin"></a> <a href="http://www.instagram.com/kswizzled"
-		class="instagram"></a> <a href="https://github.com/kcwijaya"
-		class="git"></a>
-	<div class="fb-follow" data-href="https://www.facebook.com/kim.wijaya"
-		data-layout="box_count" data-show-faces="true"></div>
-	</li>
+				<div class="container" id="fh5co-journal">
+					<div id ="skills"  class="row">
+						<div class="col-md-12">
+							<div class="fh5co-heading text-center">
+									<h2 class="fh5co-heading-title">My Skills <span class="border"></span></h2>
+									<h3 class="fh5co-heading-intro">I've had the privilege of living all around the world, and through these experiences, combined with those I've had during my time at Stanford and my various internships, I have learned the following skills. </h3>
+								</div>
+						</div>
+					</div>
+					
+				</div>
+				<section class="fh5co-section" id="fh5co-testimonial">
+					<div class="container">
+						<div class="owl-carousel-fullwidth">
+							<div class="item">
+								<h3> Programming Languages </h3>
+								<p class="text-left quote">
+									<span style="font-weight: 400"> Java: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i>   <br>
+									<span style="font-weight: 400"> C#: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <br>
+									<span style="font-weight: 400"> Python: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i><br>
+									<span style="font-weight: 400"> Javascript: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i>  <br>
+									<span style="font-weight: 400"> C++: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <br>
+									<span style="font-weight: 400"> Web: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i>  <i class="ti-thumb-up"></i> <br>
+									<span style="font-weight: 400"> C: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> </p>
 
-</ul>
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
+							</div>
+							<div class="item">
+								<p class="text-center quote"><h3>  Languages </h3>
+								<p class="text-left quote">
+									<span style="font-weight: 400"> English: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i>  <br>
+									<span style="font-weight: 400"> Bahasa Indonesian: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i>  <br>
+									<span style="font-weight: 400"> French: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <br>
+							</div>
+							<div class="item">
+								<p class="text-center quote"><h3>  Software </h3>
+								<p class="text-left quote">
+									<span style="font-weight: 400"> Microsoft Suite: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i> <br>
+									<span style="font-weight: 400"> Git/Mercurial: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i>  <i class="ti-thumb-up"></i><br>
+									<span style="font-weight: 400"> Adobe Suite: </span><i class="ti-thumb-up"></i><i class="ti-thumb-up"></i> <i class="ti-thumb-up"></i><i class="ti-thumb-up"></i><br> 
+							</div>
+						</div>
+					</div>
+				</section>
 
-<div id="project-content" class="content">
-<h1>Notable Projects</h1>
-<h3><u>Unified UI-UA Localization Service</u></h3>
-<p><b> Languages: </b> C#, but also included SQL, JavaScript, HTML,
-JQuery, Ajax, and Razor to help build the frontend and backend. It
-utilized an MVC/MVVM model under ASP.NET and depended on Entity
-Framework.</p>
-<p>The objective of this project was to merge two existing systems,
-each of which handled the management of software (UI) and content (UA)
-localization projects, respectively. My task was to create a web
-application and a merged underlying database so that existing users of
-either system would be able to use this merged system to manage both UI
-and UA localization projects. This involved overhauling the already
-established databases and tweaking the frontends. To complete this
-project, I had to learn a variety of new programming languages, as well
-as closely analyze the two existing systems.</p>
-<hr>
-<h3><u>Quiz Website</u></h3>
-<p><b>Languages: </b>This was written in primarily Java, but also
-included SQL, JQuery, CSS, HTML, and JSP.</p>
-<p>This project was essentially a quiz website which allowed users
-to create accounts, track progress, create quizzes, and make quizzes. It
-was backed by a MySQL database. It featured a sleek design and various
-additional features, including tag support, administrative settings,
-achievements, user customization, and high scores. The backend was
-supported by a large number of Java classes and entities, which worked
-with the database to produce the web application.</p>
-<hr>
-<h3><u>Auction Wesbite</u></h3>
-<p><b>Languages: </b>This was written primarily in Python, but
-required a large amount of SQL, as well as HTML.</p>
-<p>The focus of this project was less on the website itself, but
-instead on the underlying database. Data was parsed in python to be
-inserted into the Sqlite database. This project dealt with hundreds of
-thousands of data points regarding an Auction - including information
-about items, bidders, sellers, categories, and etc. The database
-integrated various constraints and triggers to ensure it would not be
-corrupted. The web application allowed users to place bids, search
-through bids, change the time of the database, explore any aspects of
-the auction, and open or close auctions.</p>
-<hr>
-<h3><u>MapReduce</u></h3>
-<p><b>Languages: </b>C++</p>
-<p>It uses multiprocessing, networking, threads, concurrency,
-distributed computing, the myth computer cluster, and the shared AFS
-system in order to build an operational MapReduce framework. This
-particular program utilized the myth cluster at Stanford Unviersity in
-order to parse a text file such that the output would be the word counts
-of every single word that appears in the file.</p>
-<hr>
-<h3><u>Heap Allocator</u></h3>
-<p><b>Languages:</b> C</p>
-<p>This project involved designing and implementing an allocator
-that responds to malloc, realloc, and free. In particular, it obtains a
-large contiugous segment of memory from the OS and parcels out this
-segment to service dynamic allocation requests. It was implemented using
-a segregated list as its underlying implementation. This segregated list
-is in the form of an array of free lists, where the first fifteen have
-fixed sizes while the remaining have ranges of powers of two. It depends
-on splitting and coalescing to get as much from the acquired memory as
-possible. The freelists are doubly linked lists to help with traversal,
-with boundary tags to identiy free and allocated blocks. Much time was
-spent on optimization to allow for greater efficiency, throughput, and
-latency.</p>
-<hr>
-<h3><u>Personal Website</u></h3>
-<p><b> Languages: </b> HTML, JQuery, CSS</p>
-<p>This project is this website! It serves as my online portfolio.
-It includes information about my education, my personality, and the
-projects I liked working on the most. I'll be the first to admit that
-front-end development was not my forte and I developed this website in
-order to test my design abilities and to learn to better use HTML and
-CSS to create a website that both functioned correctly and looked good.</p>
-<hr>
-<h3><u>Logistic Regression</u></h3>
-<p><b>Languages: </b> C++ (Stanford Library)</p>
-<p>This, along with the next project to be mentioned, was my first
-dabble into AI and machine learning. It utilizes functions and data
-structures provided by the Stanford C++ Library to classify binary
-vectors using gradient descent. Training data is input in order to make
-the model more accurate.</p>
-<hr>
-<h3><u>Naive Bayes Classifier</u></h3>
-<p><b>Languages: </b> C++ (Stanford Library)</p>
-<p>This utilizes functions and data structures provided the Stanford
-C++ Library to classify binary vectors using Maximim Likelihood
-Estimation (MLE) and Laplace paramater estimation. Training data is
-input in order to make the model more accurate, and the user is able to
-choose which method of estimation they would like the model to employ.</p>
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
+			</main>
 
-<div id="resume-content" class="content">
-<h1>Resume</h1>
-<p>A PDF version of this resume can be downloaded <a
-	href="http://bit.ly/1mj4jWt" class="reg"> here </a>.</p>
-<center>
-<h2>KIMBERLY WIJAYA</h2>
-</center>
-<center>
-<p>P.O BOX 11162 // Stanford, CA 94309 // kcwijaya@stanford.edu //
-(650) 490-0437</p>
-</center>
-<h4>Education</h4>
-<hr>
-<table>
-	<tr>
-		<td>
-		<p>09/13-present</p>
-		</td>
-		<td><b>Stanford University</b>, Stanford, CA
-		<ul>
-			<li>Pursuing a B.S. in Computer Science with a minor in
-			Mathematics, to be conferred 6/17</li>
-			<li>Relevant Coursework: Mathematical Foundations of Computing,
-			Introduction to Probability for Computer Scientists, Computer
-			Organization and Systems, Principles of Computer Systems, Design and
-			Analysis of Algorithms, Introduction to Databases, Object-Oriented
-			System Design, Applied Matrix Theory</li>
-			<li>GPA: 3.7/4.0</li>
-		</ul>
-		</td>
-	</tr>
-</table>
-<h4>Projects</h4>
-<hr>
-<ul>
-	<li><b> Naive Bayes Classifier</b>: a C++ program using the
-	Stanford C++ library to classify binary vectors using MLE and Laplace
-	parameter estimation</li>
-	<li><b>Heap Allocator</b>: a C program that provides the abilityt
-	o allocate, deallocate, and manage memory on the heap.</li>
-	<li><b> Quiz Website</b>: a web project that utilizes Java, SQL,
-	HTML, CSS, JQuery, and JSP technology to create a website for users to
-	create accounts, track progress, create quizzes,a nd take quizzes. The
-	website is backed by a MySQL database.</li>
-	<li><b>Auction Base</b>: a program that utilizes Python, SQL, and
-	HTML to create a Web UI for users to create bids, search through
-	auctions, and close/open auctions. The database utilizes various
-	constraints and triggers to accomplish this.</li>
-	<li><b>MapReduce</b>: a C++ program that utilizes multiprocessing,
-	networking, threads, concurrency, and distributed computing to build a
-	MapReduce framework</li>
-	<li><b>Unified UI-UA Localization Service</b>: a web application
-	that depends on Entity Framework and MVVM while using C# and SQL in the
-	backend and JavaScript, JQuery, and CSS in the frontend, to serve as a
-	project management system for both UI and UA Localization Projects.</li>
-</ul>
-<h4>Experience</h4>
-<hr>
-<table>
-	<tr>
-		<td>
-		<p>08/15-Present</p>
-		</td>
-		<td><b>Section Leader</b>, Stanford University, Stanford, CA
-		<ul>
-			<li>Led a section of twelve students for an introductory CS
-			course at Stanford</li>
-			<li>Worked closely with lecturers and course advisors to plan
-			sections and grade assignments</li>
-		</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>07/15-Present</td>
-		<td><b>Industry Mentorship Program Coordinator</b>, Women in
-		Computer Science, Stanford, CA
-		<ul>
-			<li>Collaborated with successful entrepreneurs in a rapidly
-			growing startup</li>
-			<li>Participated in weekly meetings with the CEO, employees, and
-			fellow interns to facilitate grwoth</li>
-		</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>06/15-09/15</td>
-		<td><b> Software Engineering Intern</b>, Microsoft, Redmond, WA
-		<ul>
-			<li>Designed and implemented a system to act as a Unified UI-UA
-			Localization service</li>
-			<li>Worked closely with database using SQL Server to integrate
-			two independent systems</li>
-			<li>Designed and implemented both the client side and server
-			side features of the web applications</li>
-			<li>Collaborated with members of the GSX team to develop a proof
-			of concept of such a system</li>
-			<li>Worked with existing systems that used ASP.NET MVC/MVVM and
-			Entity Framework</li>
-		</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>07/14-07/15</td>
-		<td><b> Campus Marketing Intern</b>, Relish, San Francisco, CA
-		<ul>
-			<li>Collaborated with successful entrepreneurs in a rapidly
-			growing startup</li>
-			<li>Participated in weekly meetings with the CEO, employees, and
-			fellow interns to facilitate grwoth</li>
-		</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>01/12-08/12</td>
-		<td><b>Laboratory Intern</b>, Sahabat Lingkungan Labs, Surabaya,
-		Indonesia
-		<ul>
-			<li>Developed strong observation skills and work ethic</li>
-			<li>Adapted to a quick, challenging work environment despite
-			heavy workload and pressure</li>
-			<li>Conducted various experiments to assist in the produciton of
-			medicine to repair cell damage due to myocardial ischemia and to
-			suppress tumors.</li>
-		</ul>
-		</td>
-	</tr>
-</table>
-<h4>Leadership</h4>
-<hr>
-<table>
-	<tr>
-		<td>
-		<p>08/10-06/13</p>
-		</td>
-		<td><b>Coordinator</b>, Cleft Care Indonesia, Surabaya, Indonesia
-		<ul>
-			<li>Raised over 180,000,000 IDR in a single day for two
-			consecutive years</li>
-			<li>Acted as leader and primary communication liaison between
-			the organization and community</li>
-			<li>Organized an annual walk-a-thon that required approaching
-			large companies for sponsorships</li>
-			<li>Oversaw a group of 5-10 students and esnured a
-			collaborative, efficient work ethic was practiced</li>
-		</ul>
-		</td>
-	</tr>
-</table>
-<h4>Additional Information and Skills:</h4>
-<ul>
-	<li><i> Programming Languages:</i> Java, SQL, C++, C, C#, HTML,
-	CSS, Python</li>
-	<li><i> Software: </i> Microsoft Word, Powerpoint, Excel, Prezi,
-	Visio, Visual Studio, SQL Server</li>
-	<li><i> Languages: </i> Fluent in English, basic skills in French,
-	limited working proficiency in Bahase Indonesian</li>
-	<li><i> Awards: </i> Received the Global Citizenship Award, given
-	to one student at member schools of EARCOS for being strongly committed
-	to engagement and action to make the world a better place. Nominated
-	for Booth Prize The Boothe Prize at Stanford University, which
-	recognizes and rewards outstanding expository and argumentative writing
-	by first-year students.</li>
-</ul>
-<div id="close"><img src="images/close.png"
-	style="width: 100%; height: 100%;"></div>
-</div>
+			<footer id="fh5co-footer" role="contentinfo">
 
-<div id="copyright">
-<p>&copy; 2015 Kimberly Wijaya</p>
-</div>
+				
+				<div class="container text-center fh5co-social-container">
+					<ul class="fh5co-social">
+						<li><a href="https://www.facebook.com/kim.wijaya" target="_blank"><i class="ti-facebook"></i> Facebook</a></li>
+						<li><a href="https://www.twitter.com/kswizzled" target="_blank"><i class="ti-twitter-alt"></i> Twitter</a></li>
+						<li><a href="https://www.github.com/kcwijaya" target="_blank"><i class="ti-github"></i> GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/kimberly-wijaya-0454a486/" target="_blank"><i class="ti-linkedin"></i> LinkedIn</a></li>
+						<li><a href="https://www.instagram.com/kswizzled" target="_blank"><i class="ti-instagram"></i> Instagram</a></li>
+						<li><a href="mailto:kcwijaya@stanford.edu"><i class="ti-email"></i> Email me</a></li>
+					</ul>
+				</div>
+				
+				<div id="fh5co-copyright">
+					<div class="container">
+						<p class="text-center"><small>&copy; Copyright 2017 Kimberly Wijaya. All Rights Reserved. <br>	Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images by <a href="http://unsplash.com/" target="_blank">Unsplash</a></small></p>
+						<p class="text-center">
+							<a href="#top" class="smoothscroll back-to-top"><i class="ti-angle-double-up"></i><span>Top</span></a>
+						</p>
+					</div>
+				</div>
+			</footer>
 
-<a class="nav" id="about" href="#about-content"></a>
-<a class="nav" id="experience" href="#experience-content"></a>
-<a class="nav" id="education" href="#education-content"></a>
-<a class="nav" id="contact" href="#contact-content"></a>
-<a class="nav" id="resume" href="#resume-content"></a>
-<a class="nav" id="project" href="#project-content"></a>
-<a class="nav" id="skills" href="#skills-content"></a>
-<a class="nav" id="acknowledge" href="#acknowledge-content"></a>
+		</div>
 
-</body>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>
